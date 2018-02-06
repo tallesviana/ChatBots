@@ -18,7 +18,7 @@ namespace BulaBot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.QnASimpleDialog());
+                await Conversation.SendAsync(activity, () => new Dialogs.QnAMaker_HeroCard());
             }
             else
             {
