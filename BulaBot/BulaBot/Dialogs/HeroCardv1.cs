@@ -7,7 +7,7 @@ using Microsoft.Bot.Connector;
 namespace BulaBot.Dialogs
 {
     [Serializable]
-    public class QnAMaker_HeroCard : IDialog<object>
+    public class HeroCardv1 : IDialog<object>
     {
         public Task StartAsync(IDialogContext context)
         {
