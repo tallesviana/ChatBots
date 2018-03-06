@@ -1,0 +1,66 @@
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Bot Application.dll.config
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Bot Application.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Bot Application.pdb
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Autofac.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Chronic.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Bot.Builder.Autofac.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Bot.Builder.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Bot.Connector.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Logging.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Protocols.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Tokens.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Rest.ClientRuntime.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.WindowsAzure.Configuration.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Newtonsoft.Json.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\QnaMaker.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\QnAMakerDialog.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\System.IdentityModel.Tokens.Jwt.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\System.Net.Http.Formatting.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\System.Web.Http.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\System.Web.Http.WebHost.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Autofac.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Bot.Builder.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Bot.Builder.Autofac.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Bot.Connector.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Logging.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Protocols.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.IdentityModel.Tokens.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.Rest.ClientRuntime.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Microsoft.WindowsAzure.Configuration.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\Newtonsoft.Json.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\System.IdentityModel.Tokens.Jwt.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\System.Net.Http.Formatting.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\System.Web.Http.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\System.Web.Http.WebHost.xml
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\it\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\cs\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\nl\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\es\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\en\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\zh-hans\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\de-dE\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\ja\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\cs\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\ar\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\fr\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\es\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\en\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\bin\fa\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\obj\Release\BulaBot.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\obj\Release\BulaBot.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\obj\Release\Bot Application.dll
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\BulaBot\obj\Release\Bot Application.pdb

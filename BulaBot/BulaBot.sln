@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulaBot", "BulaBot\BulaBot.csproj", "{F54E3C66-FB14-45F8-A062-835403E1D801}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi_Remedios", "WebApi_Remedios\WebApi_Remedios.csproj", "{F46A9FB9-F54E-469E-B3E9-08B7FBE925BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F54E3C66-FB14-45F8-A062-835403E1D801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F54E3C66-FB14-45F8-A062-835403E1D801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F54E3C66-FB14-45F8-A062-835403E1D801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F46A9FB9-F54E-469E-B3E9-08B7FBE925BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46A9FB9-F54E-469E-B3E9-08B7FBE925BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F46A9FB9-F54E-469E-B3E9-08B7FBE925BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46A9FB9-F54E-469E-B3E9-08B7FBE925BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
