@@ -45,3 +45,4 @@
 \\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\WebApi_Remedios\obj\Release\WebApi_Remedios.csproj.CoreCompileInputs.cache
 \\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\WebApi_Remedios\obj\Release\WebApi_Remedios.dll
 \\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\WebApi_Remedios\obj\Release\WebApi_Remedios.pdb
+\\Mac\Home\Documents\VisualStudioProjects\ChatBots\BulaBot\WebApi_Remedios\obj\Release\WebApi_Remedios.csprojResolveAssemblyReference.cache

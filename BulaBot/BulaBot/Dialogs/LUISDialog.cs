@@ -18,7 +18,7 @@ namespace BulaBot.Dialogs
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult resultado)
         {
-            await context.PostAsync($"Desculpa, mas nao entendi o que voce quis dizer com {resultado.Query}");
+            await context.PostAsync($"Desculpa, mas não entendi o quê você quis dizer com {resultado.Query}");
            
         }
 
@@ -32,7 +32,7 @@ namespace BulaBot.Dialogs
         [LuisIntent("Sobre")]
         public async Task Sobre(IDialogContext context, LuisResult resultado)
         {
-            await context.PostAsync("Me chamo Medi. Sou um bot, e estou aqui para te ajudar com informaçoes farmaceuticas! Tenha paciencia" +
+            await context.PostAsync("Me chamo Medi. Sou um bot, e estou aqui para te ajudar com informações farmacêuticas! Tenha paciência" +
                 " pois ainda estou aprendendo (:");
         
         }
@@ -40,16 +40,13 @@ namespace BulaBot.Dialogs
         [LuisIntent("Indicacao")]
         public async Task Indicacao(IDialogContext context, LuisResult resultado)
         {
-            var medicamento = resultado.Entities?.Select(e => e.Entity);
+            await context.PostAsync($"Já estou encontrando para que serve o medicamento...");
 
-            var endpoint = $"http://webapiremedios.azurewebsites.net/api/remedio/?nome={medicamento.ToArray()[0]}";
+            var result = await BuscarRemedio(context, resultado);
 
-            await context.PostAsync($"Já estou encontrando para que serve o remedio: {string.Join(", ", medicamento.ToArray()[0])}...");
-
-            var result = await BuscarRemedio(context, endpoint);
-
-            if (result == null)
+            if (result.Length == 0)
             {
+                await context.PostAsync($"Não encontrei para que é indicado. Esse medicamento existe?");
                 return;
             }
 
@@ -60,35 +57,31 @@ namespace BulaBot.Dialogs
         [LuisIntent("Posologia")]
         public async Task Posologia(IDialogContext context, LuisResult resultado)
         {
-            var medicamento = resultado.Entities?.Select(e => e.Entity);
+            await context.PostAsync($"Rapidinho, já estou procurando a posologia do remédio...");
 
-            var endpoint = $"http://webapiremedios.azurewebsites.net/api/remedio/?nome={medicamento.ToArray()[0]}";
+            var result = await BuscarRemedio(context, resultado);
 
-            await context.PostAsync($"Rapidinho, já estou procurando a posologia do remédio: {string.Join(", ", medicamento.ToArray()[0])}...");
-
-            var result = await BuscarRemedio(context, endpoint);
-
-            if (result == null)
+            if (result.Length == 0)
             {
+                await context.PostAsync("Não encontrei a posologia dessa remédio doido. Digite novamente o nome do medicamento (:");
                 return;
             }
 
-            var posologia = result.Select(r => $"{r.Posologia}");
+            var posologia = result.Select(r => $"**{r.Nome}**\n\n{r.Posologia}");
             await context.PostAsync($"Encontrei! (: \n\n\n\n{string.Join(",", posologia.ToArray())}");
         }
 
         [LuisIntent("Efeitos")]
         public async Task Efeitos(IDialogContext context, LuisResult resultado)
         {
-            var medicamento = resultado.Entities?.Select(e => e.Entity);
-            var endpoint = $"http://webapiremedios.azurewebsites.net/api/remedio/?nome={medicamento.ToArray()[0]}";
+           
+            await context.PostAsync($"Buscando os efeitos colaterais do medicamento...");
 
-            await context.PostAsync($"Buscando os efeitos colaterais do(a): {string.Join(", ", medicamento.ToArray()[0])}...");
+            var result = await BuscarRemedio(context, resultado);
 
-            var result = await BuscarRemedio(context, endpoint);
-
-            if (result == null)
+            if (result.Length == 0)
             {
+                await context.PostAsync("Olha, cho que esse medicamento não existe. Tente digitar novamente, por favor ;) ");
                 return;
             }
 
@@ -101,36 +94,47 @@ namespace BulaBot.Dialogs
         [LuisIntent("Preco")]
         public async Task Preco(IDialogContext context, LuisResult resultado)
         {
-            var medicamento = resultado.Entities?.Select(e => e.Entity);
-            var endpoint = $"http://webapiremedios.azurewebsites.net/api/remedio/?nome={medicamento.ToArray()[0]}";
+            
+            var result = await BuscarRemedio(context, resultado);
 
-            var result = await BuscarRemedio(context, endpoint);
-
-            if (result == null)
+            if (result.Length == 0)
             {
+                await context.PostAsync($"Tem certeza que {resultado.Entities?.Select(e => e.Entity).ToArray()[0]} existe? Dífícil de encontrar. Tente outro medicamento (:");
                 return;
             }
-            
+
             var preco = result.Select(r => $"{r.Preco}");
             await context.PostAsync($"{string.Join(",", preco.ToArray())}");
 
 
         }
 
-        private async Task<Models.Remedios[]> BuscarRemedio(IDialogContext context, string endpoint)
+        private async Task<Models.Remedios[]> BuscarRemedio(IDialogContext context, LuisResult resultado)
         {
-            using (var client = new HttpClient())
+            var medicamento = resultado.Entities?.Select(e => e.Entity);
+
+            if (medicamento.ToArray().Length == 0)
             {
-                var response = await client.GetAsync(endpoint);
-                if (!response.IsSuccessStatusCode)
+                await context.PostAsync("Ocorreu algum erro. Tente novamente!");
+                return Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Remedios[]>("[]");
+            }
+            else
+            {
+                var endpoint = $"http://webapiremedios.azurewebsites.net/api/remedio/?nome={medicamento.ToArray()[0]}";
+
+                using (var client = new HttpClient())
                 {
-                    await context.PostAsync("Ocorreu algum erro. Tente mais tarde (:");
-                    return null;
-                }
-                else
-                {
-                    string json = await response.Content.ReadAsStringAsync();
-                    return Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Remedios[]>(json);
+                    var response = await client.GetAsync(endpoint);
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        await context.PostAsync("Ocorreu algum erro. Tente mais tarde (:");
+                        return Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Remedios[]>("[]");
+                    }
+                    else
+                    {
+                        string json = await response.Content.ReadAsStringAsync();
+                        return Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Remedios[]>(json);
+                    }
                 }
             }
         }

@@ -19,7 +19,7 @@ namespace WebApi_Remedios.Models
                 Preco = "O preço gira em torno de R$ 5,00 e R$ 6,00."});
             Add(new Remedio { Nome = "Cataflan Gotas",
                 Indicacao = "Indicado para aliviar a dor causada por artrite juvenil crônica, entorses, inflamação no pós-operatório, infeções do nariz, ouvido ou garganta ou problemas ginecológicos como cólica menstrual.",
-                Posologia = "A dose deve ser indicada pelo médico de acordo com a gravidade da doença e a idade, podendo ser: \n**Crianças entre 1 ano e 13 anos**: 1 a 4 gotas por kg de peso corpóreo diariamente, divididas em 2 ou 3 doses separadas.\n**Adolescentes com mais de 14 anos**: 150 a 200 gotas diariamente, dividida em 2 ou 3 doses.\n**Adultos**: 200 a 300 gotas diariamente, dividida em 2 ou 3 doses.\nEm casos mais leves, 150 a 200 gotas diárias podem ser suficientes em adultos.",
+                Posologia = "A dose deve ser indicada pelo médico de acordo com a gravidade da doença e a idade, podendo ser: \n\n**Crianças entre 1 ano e 13 anos**: 1 a 4 gotas por kg de peso corpóreo diariamente, divididas em 2 ou 3 doses separadas.\n\n**Adolescentes com mais de 14 anos**: 150 a 200 gotas diariamente, dividida em 2 ou 3 doses.\n\n**Adultos**: 200 a 300 gotas diariamente, dividida em 2 ou 3 doses.\nEm casos mais leves, 150 a 200 gotas diárias podem ser suficientes em adultos.",
                 Efeitos = "Os efeitos colaterais mais comuns são dor de cabeça, tontura, náusea, vômito, diarreia, dor abdominal, flatulência, perda do apetite, alterações nos valores do fígado no exame de sangue, vermelhidão na pele com ou sem descamação.",
                 Preco = "O preço gira em torno de R$20,00 e R$30,00."});
             Add(new Remedio { Nome = "Dramin Comprimidos",
@@ -30,7 +30,7 @@ namespace WebApi_Remedios.Models
             });
             Add(new Remedio { Nome = "Aspirina",
                 Indicacao = "Indicado para aliviar vários tipos de dor, como dor de cabeça, dor de dente, dor de garganta, dor menstrual, dor muscular, dor nas articulações, dor nas costas ou dor da artrite. Além disso, também pode ser usada para aliviar os sintomas associados a febre nos resfriados e gripe.",
-                Posologia = "A dosagem e duração do tratamento devem ser sempre indicados pelo médico, sendo normalmente: \n**Crianças a partir dos 12 anos**: 1 comprimido, se necessário repetido a cada 4 a 8 horas. Não se deve administrar mais de 3 comprimidos por dia.\n **Adultos**: recomendam-se 1 a 2 comprimidos, se necessário repetidos a cada 4 a 8 horas. Evitando tomar mais de 8 comprimidos por dia.\nDeve-se tomar após as refeições, nunca com estômago vazio.",
+                Posologia = "A dosagem e duração do tratamento devem ser sempre indicados pelo médico, sendo normalmente: \n\n**Crianças a partir dos 12 anos**: 1 comprimido, se necessário repetido a cada 4 a 8 horas. Não se deve administrar mais de 3 comprimidos por dia.\n\n **Adultos**: recomendam-se 1 a 2 comprimidos, se necessário repetidos a cada 4 a 8 horas. Evitando tomar mais de 8 comprimidos por dia.\n\nDeve-se tomar após as refeições, nunca com estômago vazio.",
                 Efeitos = "Os efeitos colaterais são dor de estômago, náuseas, vômitos ou diarreia, sangramentos, aumento da acidez no estômago, zumbido no ouvido, tontura ou reações de alergia na pele, como vermelhidão, coceira e inchaço na pele.",
                 Preco = "O preço gira em torno de R$7,00 e R$10,00"
             });
